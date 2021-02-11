@@ -21,6 +21,25 @@
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
+if(myNumber = 10);
+
+if (true) {
+    alert("hello world...");
+    if(myNumber > 6);
+}
+if (true) {
+    drawTriangle = true 
+    let drawCircle = false
+}
+
+let player ="rock";
+let cpu = "paper"
+function RPS(){
+    if (player == "rock" && cpu == "paper") {
+        console.log("you lose....");
+    }
+}
+
 //init a function to draw a triangle on the canvas
 function drawTriangle() {
       ctx.beginPath();
@@ -28,7 +47,9 @@ function drawTriangle() {
       ctx.lineTo(100, 75);
       ctx.lineTo(100, 25);
       ctx.fill();
+      
     }
+
 //init a function to draw a square on the canvas
   function drawSquare(){
     ctx.fillRect(25, 25, 100, 100);
@@ -41,7 +62,16 @@ function drawTriangle() {
     ctx.arc(100, 75, 50, 0, 2 * Math.PI);
     ctx.stroke();
   }
+d = new Date();
 
+function main(){
+    if (d.getday() < 3){
+        drawTriangle();
+    }
+    else if (d.getDay() < 6){
+drawSquare();
+    }
+}
   function main(){
     drawTriangle();
     drawSquare();
